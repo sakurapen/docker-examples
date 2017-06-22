@@ -1,0 +1,9 @@
+version: '3'
+services:
+  mariadb:
+    container_name: mariadb
+    image: mariadb:10.1
+    environment:
+      - MYSQL_ROOT_PASSWORD=somepassword
+    volumes:
+      - ./data:/var/lib/mysql
