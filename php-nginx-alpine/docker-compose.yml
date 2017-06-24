@@ -1,0 +1,8 @@
+version: '3'
+services:
+  php-nginx:
+    build: .
+    container_name: php-nginx
+    image: php-nginx-alpine
+    ports:
+      - 80:80
